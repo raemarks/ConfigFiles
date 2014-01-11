@@ -1,3 +1,4 @@
+#! /bin/bash
 ln -s ~/git-install/.fonts ~/.fonts
 ln -s ~/git-install/.gvimrc ~/.gvimrc
 ln -s ~/git-install/.vimrc ~/.vimrc
