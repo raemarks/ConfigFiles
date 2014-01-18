@@ -13,6 +13,8 @@ set nocompatible               " be iMproved
  Bundle 'ervandew/supertab'
  Bundle 'Rip-Rip/clang_complete'
  Bundle 'kien/ctrlp.vim'
+ Bundle 'vim-scripts/DoxygenToolkit.vim'
+
  autocmd FileType go let g:SuperTabDefaultCompletionType="<c-x><c-o>"
  filetype plugin indent on     " required!
  "

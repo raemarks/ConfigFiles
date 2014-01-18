@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rhythmdb-playlists>
-  <playlist name="My Top Rated" show-browser="true" browser-position="235" search-type="search-match" type="automatic" sort-key="Rating" sort-direction="1">
+  <playlist name="My Top Rated" show-browser="true" browser-position="307" search-type="search-match" type="automatic" sort-key="Rating" sort-direction="1">
     <conjunction>
       <equals prop="type">song</equals>
       <subquery>
@@ -10,7 +10,7 @@
       </subquery>
     </conjunction>
   </playlist>
-  <playlist name="Recently Added" show-browser="true" browser-position="235" search-type="search-match" type="automatic" sort-key="Track" sort-direction="0">
+  <playlist name="Recently Added" show-browser="true" browser-position="307" search-type="search-match" type="automatic" sort-key="Track" sort-direction="0">
     <conjunction>
       <equals prop="type">song</equals>
       <subquery>
@@ -20,7 +20,7 @@
       </subquery>
     </conjunction>
   </playlist>
-  <playlist name="Recently Played" show-browser="true" browser-position="235" search-type="search-match" type="automatic" sort-key="LastPlayed" sort-direction="1">
+  <playlist name="Recently Played" show-browser="true" browser-position="307" search-type="search-match" type="automatic" sort-key="LastPlayed" sort-direction="1">
     <conjunction>
       <equals prop="type">song</equals>
       <subquery>
@@ -30,7 +30,7 @@
       </subquery>
     </conjunction>
   </playlist>
-  <playlist name="Awesome list" show-browser="true" browser-position="235" search-type="search-match" type="static">
+  <playlist name="Awesome list" show-browser="true" browser-position="307" search-type="search-match" type="static">
     <location>file:///run/media/Rae/New%20Volume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/04%20See%20You%20Again.flac</location>
     <location>file:///run/media/Rae/New%20Volume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/02%20Blown%20Away.flac</location>
     <location>file:///run/media/Rae/New%20Volume/Music/2007%20The%20Best%20Damn%20Thing/12%20-%20Keep%20Holding%20On.mp3</location>
@@ -297,15 +297,15 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/%5B1995%5D%20Goo%20Goo%20Dolls%20(A%20Boy%20Named%20Goo)%20@320%20with%20Cover%20Art!%20%5Bh33t%5D%20%5BInert01%5D/06%20-%20Goo%20Goo%20Dolls%20-%20Name.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/05.%20Name%20(New%20Version).mp3</location>
   </playlist>
-  <playlist name="Colbie Caillat - Coco" show-browser="true" browser-position="235" search-type="search-match" type="static"/>
-  <playlist name="Deadmau5 - For Lack of a Better Name" show-browser="true" browser-position="235" search-type="search-match" type="static">
+  <playlist name="Colbie Caillat - Coco" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
+  <playlist name="Deadmau5 - For Lack of a Better Name" show-browser="true" browser-position="307" search-type="search-match" type="static">
     <location>file:///run/media/Rae/New%20Volume/Music/Jeromy/Flux%20Pavilion/Blow%20the%20Roof/02%20The%20Scientist.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Deadmau5/For%20Lack%20of%20a%20Better%20Name/03%20Ghosts%20'n%20Stuff%20(feat.%20Rob%20Swire).mp3</location>
   </playlist>
-  <playlist name="Green Day - American Idiot" show-browser="true" browser-position="235" search-type="search-match" type="static"/>
-  <playlist name="Maroon 5 - Songs About Jane" show-browser="true" browser-position="235" search-type="search-match" type="static"/>
-  <playlist name="New Playlist" show-browser="true" browser-position="235" search-type="search-match" type="static"/>
-  <playlist name="Rae" show-browser="true" browser-position="457" search-type="search-match" type="static">
+  <playlist name="Green Day - American Idiot" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
+  <playlist name="Maroon 5 - Songs About Jane" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
+  <playlist name="New Playlist" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
+  <playlist name="Rae" show-browser="true" browser-position="426" search-type="search-match" type="static">
     <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Megalithic%20Symphony%20%5BFLAC%5D/11.%20AWOLNATION%20-%20Wake%20Up.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Megalithic%20Symphony%20%5BFLAC%5D/12.%20AWOLNATION%20-%20Not%20Your%20Fault.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Blind%20Pilot%20-%20We%20Are%20The%20Tide/Blind%20Pilot%20-%20Half%20Moon.flac</location>
@@ -483,7 +483,7 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/(2013)%20Lorde%20-%20Pure%20Heroine%20%5BFLAC%5D/06%20Team.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Howard%20Shore%20-%20The%20Hobbit%20-%20The%20Desolation%20of%20Smaug%20-%20(Special%20Edition)%20-%202013%20%5BMP3%5D/Disc%202/14.%20I%20See%20Fire%20(Ed%20Sheeran).mp3</location>
   </playlist>
-  <playlist name="Rae y Jeromy" show-browser="true" browser-position="235" search-type="search-match" type="static"/>
-  <playlist name="Sleep" show-browser="true" browser-position="235" search-type="search-match" type="static"/>
+  <playlist name="Rae y Jeromy" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
+  <playlist name="Sleep" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
   <playlist name="Play Queue" show-browser="false" browser-position="180" search-type="search-match" type="queue"/>
 </rhythmdb-playlists>
