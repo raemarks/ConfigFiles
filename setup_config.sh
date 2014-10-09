@@ -1,7 +1,8 @@
 #! /bin/bash
-ln -s ~/git-install/.fonts ~/.fonts
-ln -s ~/git-install/.gvimrc ~/.gvimrc
-ln -s ~/git-install/.vimrc ~/.vimrc
-ln -s ~/git-install/fish ~/.config/fish
-ln -s ~/git-install/rhythmbox ~/.local/share/rhythmbox
+ln -s ~/ConfigFiles/.fonts ~/.fonts
+ln -s ~/ConfigFiles/.gvimrc ~/.gvimrc
+ln -s ~/ConfigFiles/.vimrc ~/.vimrc
+ln -s ~/ConfigFiles/fish ~/.config/fish
+ln -s ~/ConfigFiles/.gvimrc /root/.gvimrc
+ln -s ~/ConfigFiles/.vimrc /root/.vimrc
 #manually copy the fstab and hosts over. Just copy the lines I need. 
