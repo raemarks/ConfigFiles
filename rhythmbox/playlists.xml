@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rhythmdb-playlists>
-  <playlist name="My Top Rated" show-browser="true" browser-position="307" search-type="search-match" type="automatic" sort-key="Rating" sort-direction="1">
+  <playlist name="My Top Rated" show-browser="true" browser-position="612" search-type="search-match" type="automatic" sort-key="Rating" sort-direction="1">
     <conjunction>
       <equals prop="type">song</equals>
       <subquery>
@@ -10,7 +10,7 @@
       </subquery>
     </conjunction>
   </playlist>
-  <playlist name="Recently Added" show-browser="true" browser-position="307" search-type="search-match" type="automatic" sort-key="Track" sort-direction="0">
+  <playlist name="Recently Added" show-browser="true" browser-position="612" search-type="search-match" type="automatic" sort-key="Title" sort-direction="0">
     <conjunction>
       <equals prop="type">song</equals>
       <subquery>
@@ -20,7 +20,7 @@
       </subquery>
     </conjunction>
   </playlist>
-  <playlist name="Recently Played" show-browser="true" browser-position="307" search-type="search-match" type="automatic" sort-key="LastPlayed" sort-direction="1">
+  <playlist name="Recently Played" show-browser="true" browser-position="612" search-type="search-match" type="automatic" sort-key="LastPlayed" sort-direction="1">
     <conjunction>
       <equals prop="type">song</equals>
       <subquery>
@@ -30,7 +30,7 @@
       </subquery>
     </conjunction>
   </playlist>
-  <playlist name="Awesome list" show-browser="true" browser-position="307" search-type="search-match" type="static">
+  <playlist name="Awesome list" show-browser="true" browser-position="612" search-type="search-match" type="static">
     <location>file:///run/media/Rae/New%20Volume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/04%20See%20You%20Again.flac</location>
     <location>file:///run/media/Rae/New%20Volume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/02%20Blown%20Away.flac</location>
     <location>file:///run/media/Rae/New%20Volume/Music/2007%20The%20Best%20Damn%20Thing/12%20-%20Keep%20Holding%20On.mp3</location>
@@ -297,15 +297,23 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/%5B1995%5D%20Goo%20Goo%20Dolls%20(A%20Boy%20Named%20Goo)%20@320%20with%20Cover%20Art!%20%5Bh33t%5D%20%5BInert01%5D/06%20-%20Goo%20Goo%20Dolls%20-%20Name.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/05.%20Name%20(New%20Version).mp3</location>
   </playlist>
-  <playlist name="Colbie Caillat - Coco" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
-  <playlist name="Deadmau5 - For Lack of a Better Name" show-browser="true" browser-position="307" search-type="search-match" type="static">
+  <playlist name="Colbie Caillat - Coco" show-browser="true" browser-position="612" search-type="search-match" type="static"/>
+  <playlist name="Deadmau5 - For Lack of a Better Name" show-browser="true" browser-position="612" search-type="search-match" type="static">
     <location>file:///run/media/Rae/New%20Volume/Music/Jeromy/Flux%20Pavilion/Blow%20the%20Roof/02%20The%20Scientist.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Deadmau5/For%20Lack%20of%20a%20Better%20Name/03%20Ghosts%20'n%20Stuff%20(feat.%20Rob%20Swire).mp3</location>
   </playlist>
-  <playlist name="Green Day - American Idiot" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
-  <playlist name="Maroon 5 - Songs About Jane" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
-  <playlist name="New Playlist" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
-  <playlist name="Rae" show-browser="true" browser-position="426" search-type="search-match" type="static">
+  <playlist name="Green Day - American Idiot" show-browser="true" browser-position="612" search-type="search-match" type="static"/>
+  <playlist name="Maroon 5 - Songs About Jane" show-browser="true" browser-position="612" search-type="search-match" type="static"/>
+  <playlist name="Mashups" show-browser="true" browser-position="486" search-type="search-match" type="static">
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Daniel%20Kim%20-%20Pop%20Danthology%202012%20%5BMP3%20V0%5D/Pop%20Danthology%202012.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202010.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202011.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202012.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202013.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Bearly%20Legal%20(Continuous%20Mix).mp3</location>
+  </playlist>
+  <playlist name="New Playlist" show-browser="true" browser-position="612" search-type="search-match" type="static"/>
+  <playlist name="Rae" show-browser="true" browser-position="479" search-type="search-match" type="static">
     <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Megalithic%20Symphony%20%5BFLAC%5D/11.%20AWOLNATION%20-%20Wake%20Up.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Megalithic%20Symphony%20%5BFLAC%5D/12.%20AWOLNATION%20-%20Not%20Your%20Fault.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Blind%20Pilot%20-%20We%20Are%20The%20Tide/Blind%20Pilot%20-%20Half%20Moon.flac</location>
@@ -333,12 +341,8 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/01.%20Let%20Love%20In.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/04.%20Slide.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/06.%20Stay%20With%20You.mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/13.%20Sympathy.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.2%20(2008)%20-%20Rock%20%5Bwww.torrentazos.com%5D/11-the_goo_goo_dolls-well_be_here_(when_youre_gone)_(new_mix).mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Gorillaz%20-%20Plastic%20Beach%20(2010)%20(FLAC)/06%20Superfast%20Jellyfish.flac</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Gorillaz%20-%20Plastic%20Beach%20(2010)%20(FLAC)/03%20White%20Flag.flac</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Gorillaz%20-%20Plastic%20Beach%20(2010)%20(FLAC)/10%20On%20Melancholy%20Hill.flac</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Gorillaz%20-%20Plastic%20Beach%20(2010)%20(FLAC)/04%20Rhinestone%20Eyes.flac</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/13.%20Sympathy.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Green%20Day%20-%20The%20Studio%20Albums%201990-2009%20(2012)%20%5BFLAC%5D/Disc%207%20-%20American%20Idiot%20%5B2004%5D/05%20-%20Are%20We%20the%20Waiting.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Green%20Day%20-%20The%20Studio%20Albums%201990-2009%20(2012)%20%5BFLAC%5D/Disc%207%20-%20American%20Idiot%20%5B2004%5D/04%20-%20Boulevard%20of%20Broken%20Dreams.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F34/XVGX.m4a</location>
@@ -352,8 +356,6 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/Justin%20Timberlake%20-%20Studio%20Discography%202002-2013%20%5BFLAC%5D/2002%20-%20Justified/05%20-%20Cry%20Me%20a%20River.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Justin%20Timberlake%20-%20Studio%20Discography%202002-2013%20%5BFLAC%5D/2006%20-%20FutureSex_LoveSounds/04%20-%20My%20Love.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Kimbra%20-%20Vows%20(2011)/05%20-%20Good%20Intent.mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Knife%20Party%20-%20Rage%20Valley%20(2012)%20EP/FLAC/03%20-%20Bonfire.flac</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Knife%20Party/100%20No%20Modern%20Talking%20(2011)%20FLAC/01%20-%20Internet%20Friends%20(Original%20Mix).flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Kimbra%20-%20Vows%20(2011)/03%20-%20Two%20Way%20Street.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Lorde%20-%20Royals.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F27/HMEU.mp3</location>
@@ -371,10 +373,8 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F47/LMUL.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F29/NRMN.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F34/PIHY.m4a</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F33/AMMX.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Matchbox%20Twenty%20-%20She's%20So%20Mean%20%7B2012-Single%7D%5BNL%5D/01%20She's%20So%20Mean.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Of%20Monsters%20and%20Men%20-%20Little%20Talks%20(2012.Indie)/Of%20Monsters%20and%20Men%20-%20Little%20Talks.mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Pendulum/Hold%20Your%20Colour/02%20Slam.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Immersion/08%20The%20Island%20Pt.1%20(Dawn).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/P!nk%20-%20The%20Truth%20About%20Love%20(2012)%20%5B24%20bit%20FLAC%5D%20vinyl/A3%20-%20Try.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/P!nk%20-%20The%20Truth%20About%20Love%20(2012)%20%5B24%20bit%20FLAC%5D%20vinyl/B1%20-%20Just%20Give%20Me%20A%20Reason.flac</location>
@@ -394,7 +394,6 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bearly%20Legal/11%20Wide%20Deliveries%20(Katy%20Perry%20__%20Maroon%205%20__%20Bubba%20Sparxxx).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bearly%20Legal/08%20Boulevard%20of%20Heart%20Attacks%20(Green%20Day%20__%20Demi%20Lovato).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bearly%20Legal/05%20Can't%20Hold%20Us%20Back%20(Macklemore%20&amp;%20Ryan%20Lewis%20__%20Calvin%20Harris).mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bearly%20Legal/10%20Diamond%20Thrones%20(Rihanna%20__%20Stephen%20Warbeck).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bearly%20Legal/07%20Good%20Amber%20Night%20(Roscoe%20Dash%20__%20311).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bearly%20Legal/14%20Firefly%20(Ellie%20Goulding%20__%20The%20Lumineers%20__%20A$AP%20Rocky).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F32/GULI.mp3</location>
@@ -414,7 +413,6 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/OneRepublic%20-%20%20Good%20Life.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/OneRepublic%20-%20Native%20%5BDeluxe%20Edition%5D%20%5B2013%5D/15%20-%20If%20I%20Lose%20Myself.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/OneRepublic%20-%20Native%20%5BDeluxe%20Edition%5D%20%5B2013%5D/14%20-%20Life%20in%20Color.mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/OneRepublic%20-%20Native%20%5BDeluxe%20Edition%5D%20%5B2013%5D/06%20-%20Light%20It%20Up.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/OneRepublic%20-%20Native%20%5BDeluxe%20Edition%5D%20%5B2013%5D/11%20-%20Preacher.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/OneRepublic%20-%20Discography%202007%20-%202009%20%5BFLAC%5D%20%5Bh33t%5D%20-%20Kitlope/One%20Republic%20-%20Waking%20Up%202009/03.%20Secrets%20-%20OneRepublic.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/OneRepublic%20-%20Discography%202007%20-%202009%20%5BFLAC%5D%20%5Bh33t%5D%20-%20Kitlope/One%20Republic%20-%20Dreaming%20Out%20Loud%202007/11.%20Someone%20To%20Save%20You%20-%20OneRepublic.flac</location>
@@ -430,8 +428,8 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/John%20Mayer/Room%20for%20Squares/John%20Mayer-Your%20Body%20Is%20A%20Wonderland.MP3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/%5B1995%5D%20Goo%20Goo%20Dolls%20(A%20Boy%20Named%20Goo)%20@320%20with%20Cover%20Art!%20%5Bh33t%5D%20%5BInert01%5D/06%20-%20Goo%20Goo%20Dolls%20-%20Name.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/The%20Goo%20Goo%20Dolls%20-%20Greatest%20Hits%20Vol.%201%20The%20Singles%20(2007)%20320%20vtwin88cube/05.%20Name%20(New%20Version).mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/10%20Good%20In%20Goodbye.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/09%20Thank%20God%20For%20Hometowns.flac</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/10%20Good%20In%20Goodbye.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/02%20Blown%20Away.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Avril%20Lavigne%20-%20Goodbye%20Lullaby%20(Deluxe)%20CDRip%202011%20%5BMJN%5D/04%20-%20Wish%20You%20Were%20Here.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Avril%20Lavigne%20-%20Goodbye%20Lullaby%20(Deluxe)%20CDRip%202011%20%5BMJN%5D/17%20-%20Wish%20You%20Were%20Here%20(Acoustic).mp3</location>
@@ -440,7 +438,6 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/2007%20The%20Best%20Damn%20Thing/12%20-%20Keep%20Holding%20On.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F30/GXQT.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Sure%20Be%20Cool%20If%20You%20Did%20-%20Single/01%20Sure%20Be%20Cool%20If%20You%20Did.mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/01%20With%20Ur%20Love.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F42/FBQZ.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Daft%20Punk%20-%20Random%20Access%20Memories/Daft%20Punk%20Feat%20Pharrell%20Williams%20-%20Get%20Lucky.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Daughtry%20-%20Daughtry%20US%20Deluxe%20Edition(2008)/Daughtry%20-%2006.%20Feels%20Like%20Tonight.mp3</location>
@@ -451,7 +448,6 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/Florida%20Georgia%20Line%20-%20Cruise%20(Remix)%20%5Bfeat.%20Nelly%5D.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F45/XINH.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Imagine%20Dragons/Continued%20Silence/05%20It's%20Time.mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F46/LWLU.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F06/IAFW.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Joshua%20Radin%20-%20We%20Were%20Here/Joshua%20Radin%20-%20Everything'll%20Be%20Alright%20.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Joshua%20Radin%20-%20We%20Were%20Here/Joshua%20Radin%20-%20Sundrenched%20World.mp3</location>
@@ -470,20 +466,56 @@
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F27/NZDJ.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Miley%20Cyrus%20-%20We%20Can't%20Stop.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F22/JAHH.mp3</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/No%20Doubt%20-%20Push%20And%20Shove%20(2012)%20%5BFLAC%5D/CD1/04%20No%20Doubt%20-%20Push%20And%20Shove.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F08/GGDX.m4a</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Taylor%20Swift%20-%20Everything%20Has%20Chang.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Yellowcard/2003%20-%20Ocean%20Avenue/12%20-%20One%20Year%20Six%20Months.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Wisin%20&amp;%20Yandel%20-%20La%20Revolucion%20(Deluxe%20Edition)%5B2009%5D/18%2018.Lloro%20Por%20Ti%20(Remix).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Goo%20Goo%20Dolls%20-%20Magnetic%20(2013)%20%5BMP3%20320%5D/05%20-%20Come%20To%20Me.mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/14%20Who%20Are%20You.flac</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/06%20Forever%20Changed.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Carrie%20Underwood%20-%20Blown%20Away%20(2012)%20%5BFLAC%5D/05%20Do%20You%20Think%20About%20Me.flac</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/(2013)%20Lorde%20-%20Pure%20Heroine%20%5BFLAC%5D/06%20Team.flac</location>
-    <location>file:///home/Rae/Expansion/NewVolume/Music/Howard%20Shore%20-%20The%20Hobbit%20-%20The%20Desolation%20of%20Smaug%20-%20(Special%20Edition)%20-%202013%20%5BMP3%5D/Disc%202/14.%20I%20See%20Fire%20(Ed%20Sheeran).mp3</location>
     <location>file:///home/Rae/Expansion/NewVolume/Music/Wisin%20&amp;%20Yandel%20-%20La%20Revolucion%20(Deluxe%20Edition)%5B2009%5D/12%2012.%C2%BFC%C3%B3mo%20Quieres%20Que%20Te%20Olvide.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F44/LCMQ.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Howard%20Shore%20-%20The%20Hobbit%20-%20The%20Desolation%20of%20Smaug%20-%20(Special%20Edition)%20-%202013%20%5BMP3%5D/Disc%202/01.%20Thrice%20Welcome.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Howard%20Shore%20-%20The%20Hobbit%20-%20The%20Desolation%20of%20Smaug%20-%20(Special%20Edition)%20-%202013%20%5BMP3%5D/Disc%202/14.%20I%20See%20Fire%20(Ed%20Sheeran).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/John%20Mayer/Battle%20Studies/07%20Crossroads.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/01%20Let%20Me%20Go%20(feat.%20Chad%20Kroeger).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Die%20Antwoord/Die%20Antwoord%20-%202010%20-%20$O$/17.%20Jou%20Ma%20Se%20Poes%20In'N%20FishPaste%20Jar.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Die%20Antwoord/Die_Antwoord%20-2010%20-%205%20%5BEP%5D/01.%20Enter%20The%20Ninja.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Jeromy/Die%20Antwoord/Die%20Antwoord%20-%202010%20-%20Ekstra%20%5BEP%5D/02%20Die%20Antwoord%20-%20Very%20Fancy.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Pandamonium%20(full%20album).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bambooyah!%20(HD%20Full%20Version).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Bearly%20Legal%20(Continuous%20Mix).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Zendaya%20-%20Replay.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202013.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202012.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202011.mp3</location>
+    <location>file:///home/Rae/Downloads/Pop%20Danthology%202010.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Ellie%20Goulding%20-%20Halcyon%20%5B2012%5D/14-ellie_goulding-lights_(single_version).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Ellie%20Goulding%20-%20Halcyon%20%5B2012%5D/13-calvin_harris-i_need_your_love_(feat._ellie_goulding).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/John%20Legend%20-%20All%20of%20Me.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/katejazmo/Wiz%20Khalifa%20-%20Black%20and%20Yellow.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F03/DDEH.m4a</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/LOTR%20-%20Soundtrack/LOTR%20-%20The%20Return%20Of%20The%20King%20Soundtrack/19.%20Into%20the%20West.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/TBHU.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/01%20Human.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Jason%20Derulo%20Feat%202%20Chainz%20-%20Talk%20Dirty.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/RAE'S%20IPOD/F22/LGLB.mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Hollywood%20undead%20-%20American%20Tragedy%20(2011)%20(320)/13%20Pour%20Me.mp3</location>
+    <location>file:///home/Rae/Downloads/Wondersleep%20(Wiz%20Khalifa%20__%20Oasis)%20(1).mp3</location>
+    <location>file:///home/Rae/Expansion/NewVolume/Music/Demi%20Lovato%20-%20Let%20It%20Go%20(Single)%20320kbps%20-BFAB/Demi%20Lovato%20-%20Let%20It%20Go%20(Single)%20320kbps%20-BFAB.mp3</location>
+    <location>file:///home/Rae/Downloads/Good%20Amber%20Night.mp3</location>
+    <location>file:///home/Rae/Downloads/Wallphones%20(Maroon%205%20__%20Sultan%20&amp;%20Ned%20Shepard).mp3</location>
+    <location>file:///home/Rae/Downloads/Diamond%20Thrones.mp3</location>
+    <location>file:///home/Rae/Downloads/Push%20With%20Me%20(2).mp3</location>
+    <location>file:///home/Rae/Downloads/Bittersweet%20Donald%20(Mac%20Miller%20__%20The%20Verve).mp3</location>
+    <location>file:///home/Rae/Downloads/Midnight%20Life.mp3</location>
+    <location>file:///home/Rae/Downloads/Hell%20Neva%20Eva.mp3</location>
+    <location>file:///home/Rae/Downloads/Stereo%20Hands.mp3</location>
   </playlist>
-  <playlist name="Rae y Jeromy" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
-  <playlist name="Sleep" show-browser="true" browser-position="307" search-type="search-match" type="static"/>
+  <playlist name="Rae y Jeromy" show-browser="true" browser-position="612" search-type="search-match" type="static"/>
+  <playlist name="Sleep" show-browser="true" browser-position="612" search-type="search-match" type="static">
+    <location>file:///home/Rae/Expansion/NewVolume/Music/The%20White%20Panda%20-%20Bambooyah!%20(HD%20Full%20Version).mp3</location>
+  </playlist>
   <playlist name="Play Queue" show-browser="false" browser-position="180" search-type="search-match" type="queue"/>
 </rhythmdb-playlists>
