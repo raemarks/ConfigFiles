@@ -1,37 +1,33 @@
+set nocompatible
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
-" required! 
- Bundle 'gmarik/vundle'
- Bundle 'nsf/gocode'
- Bundle 'jnwhiteh/vim-golang'
- Bundle 'scrooloose/nerdtree'
- Bundle 'ervandew/supertab'
- Bundle 'Rip-Rip/clang_complete'
- Bundle 'kien/ctrlp.vim'
- Bundle 'vim-scripts/DoxygenToolkit.vim'
- Bundle 'fatih/vim-go'
+" required!
+Plugin 'gmarik/vundle'
+Plugin 'nsf/gocode'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/supertab'
+Plugin 'Rip-Rip/clang_complete'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-scripts/DoxygenToolkit.vim'
+Plugin 'fatih/vim-go'
+
+call vundle#end()
+filetype plugin indent on     " required!
 
 autocmd FileType go let g:SuperTabDefaultCompletionType="<c-x><c-o>"
-filetype plugin indent on     " required!
+
 "
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
 set shell=bash
 
 " let mapleader=","
 " map <Leader>tr :NERDTreeToggle<CR>
-colorscheme molokai 
-"colorscheme ir_black 
+colorscheme molokai
+"colorscheme ir_black
 
 
 set nocompatible               " be iMproved
@@ -85,7 +81,7 @@ if has("autocmd")
 		au!
 
 		" For all text files set 'textwidth' to 78 characters.
-		autocmd FileType text setlocal textwidth=78
+		" autocmd FileType text setlocal textwidth=78
 
 		" When editing a file, always jump to the last known cursor position.
 		" Don't do it when the position is invalid or when inside an event handler
@@ -204,4 +200,33 @@ if has("autocmd")
 	highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 	match OverLength /\%81v.\+/
 
+
+	let s:pattern = '^\(.* \)\([1-9][0-9]*\)$'
+	let s:minfontsize = 6
+	let s:maxfontsize = 20
+	function! AdjustFontSize(amount)
+		if has("gui_gtk2") && has("gui_running")
+			let fontname = substitute(&guifont, s:pattern, '\1', '')
+			let cursize = substitute(&guifont, s:pattern, '\2', '')
+			let newsize = cursize + a:amount
+			if (newsize >= s:minfontsize) && (newsize <= s:maxfontsize)
+				let newfont = fontname . newsize
+				let &guifont = newfont
+			endif
+		else
+			echoerr "You need to run the GTK2 version of Vim to use this function."
+		endif
+	endfunction
+
+	function! LargerFont()
+		call AdjustFontSize(1)
+	endfunction
+	command! LargerFont call LargerFont()
+
+	function! SmallerFont()
+		call AdjustFontSize(-1)
+	endfunction
+	command! SmallerFont call SmallerFont()
+
 endif " has("autocmd")
+set guifont=Source\ Code\ Pro\ 11
