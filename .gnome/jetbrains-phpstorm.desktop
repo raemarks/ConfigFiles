@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PhpStorm
+Icon=/home/Rae/PhpStorm-139.1348/bin/webide.png
+Exec="/home/Rae/PhpStorm-139.1348/bin/phpstorm.sh" %f
+Comment=Develop with pleasure!
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-phpstorm
+OnlyShowIn=Old;

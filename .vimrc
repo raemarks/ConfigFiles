@@ -1,36 +1,44 @@
-set nocompatible
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle.vim
+set nocompatible
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle
-" required!
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 Plugin 'nsf/gocode'
 Plugin 'jnwhiteh/vim-golang'
-Plugin 'scrooloose/nerdtree'
+" Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'Rip-Rip/clang_complete'
-Plugin 'kien/ctrlp.vim'
+" Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
-Plugin 'fatih/vim-go'
+Plugin 'luochen1990/rainbow'
 
 call vundle#end()
 filetype plugin indent on     " required!
-
 autocmd FileType go let g:SuperTabDefaultCompletionType="<c-x><c-o>"
 
+let g:rainbow_active = 1
+
 "
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
 set shell=bash
 
 " let mapleader=","
 " map <Leader>tr :NERDTreeToggle<CR>
-colorscheme molokai
-"colorscheme ir_black
+colorscheme base16-bright-mod
+
+"colorscheme ir_black 
 
 
-set nocompatible               " be iMproved
 set bs=2
 set guioptions=aegit
 set autoindent
@@ -42,6 +50,7 @@ set showcmd
 set incsearch
 set showmatch
 set nu
+"set gfn=Source\ Code\ Pro\ 10
 
 set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·,nbsp:‿ " show these hidden characters
 set list    " show the characters above
@@ -67,8 +76,39 @@ if &term ==? "xterm"
 endif
 
 
+if has('gui_running')
+	"set guifont=:h11
+endif
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
+	let s:pattern = '^\(.* \)\([1-9][0-9]*\)$'
+	let s:minfontsize = 6
+	let s:maxfontsize = 16
+
+	function! AdjustFontSize(amount)
+		if has("gui_gtk2") && has("gui_running")
+			let fontname = substitute(&guifont, s:pattern, '\1', '')
+			let cursize = substitute(&guifont, s:pattern, '\2', '')
+			let newsize = cursize + a:amount
+			if (newsize >= s:minfontsize) && (newsize <= s:maxfontsize)
+				let newfont = fontname . newsize
+				let &guifont = newfont
+			endif
+		else
+			echoerr "You need to run the GTK2 version of Vim to use this function."
+		endif
+	endfunction
+
+	function! LargerFont()
+		call AdjustFontSize(1)
+	endfunction
+	command! LargerFont call LargerFont()
+
+	function! SmallerFont()
+		call AdjustFontSize(-1)
+	endfunction
+	command! SmallerFont call SmallerFont()
 
 	" Enable file type detection.
 	" Use the default filetype settings, so that mail gets 'tw' set to 72,
@@ -81,7 +121,7 @@ if has("autocmd")
 		au!
 
 		" For all text files set 'textwidth' to 78 characters.
-		" autocmd FileType text setlocal textwidth=78
+		autocmd FileType text setlocal textwidth=78
 
 		" When editing a file, always jump to the last known cursor position.
 		" Don't do it when the position is invalid or when inside an event handler
@@ -93,8 +133,7 @@ if has("autocmd")
 
 	augroup END
 
-	au BufRead,BufNewFile *.c,*.h set tabstop=8
-	au BufRead,BufNewFile *py,*pyw set tabstop=8
+	au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=8
 	"au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
 	au BufRead *.py,*pyw set shiftwidth=4
 	au BufRead,BufNewFile *.py,*.pyw set expandtab
@@ -171,7 +210,7 @@ if has("autocmd")
 		set colorcolumn=80
 	endfun
 
-	autocmd Filetype html,c,cpp,go,python set colorcolumn=80
+	autocmd Filetype html,c,cpp,go set colorcolumn=80
 	autocmd Filetype c,cpp call FreeBSD_Style()
 	autocmd BufRead,BufNewFile *.h call FreeBSD_Style()
 
@@ -201,32 +240,4 @@ if has("autocmd")
 	match OverLength /\%81v.\+/
 
 
-	let s:pattern = '^\(.* \)\([1-9][0-9]*\)$'
-	let s:minfontsize = 6
-	let s:maxfontsize = 20
-	function! AdjustFontSize(amount)
-		if has("gui_gtk2") && has("gui_running")
-			let fontname = substitute(&guifont, s:pattern, '\1', '')
-			let cursize = substitute(&guifont, s:pattern, '\2', '')
-			let newsize = cursize + a:amount
-			if (newsize >= s:minfontsize) && (newsize <= s:maxfontsize)
-				let newfont = fontname . newsize
-				let &guifont = newfont
-			endif
-		else
-			echoerr "You need to run the GTK2 version of Vim to use this function."
-		endif
-	endfunction
-
-	function! LargerFont()
-		call AdjustFontSize(1)
-	endfunction
-	command! LargerFont call LargerFont()
-
-	function! SmallerFont()
-		call AdjustFontSize(-1)
-	endfunction
-	command! SmallerFont call SmallerFont()
-
 endif " has("autocmd")
-set guifont=Source\ Code\ Pro\ 11
