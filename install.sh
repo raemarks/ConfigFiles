@@ -9,6 +9,7 @@ sudo dnf install clang
 sudo dnf install golang
 sudo dnf install htop
 sudo dnf install spot
+sudo dnf install terminator
 sudo dnf install gnome-tweak-tool
 #programming tools installed.
 #Install chrome.
