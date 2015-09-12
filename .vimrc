@@ -1,5 +1,8 @@
 filetype off                   " required!
 
+set t_Co=256
+
+set background=dark
 set nocompatible
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
